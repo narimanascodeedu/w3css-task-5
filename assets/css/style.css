@@ -1,0 +1,392 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: 10px;
+  font-family: "Lato", serif;
+}
+nav {
+  position: fixed;
+  width: 100%;
+  left: 0;
+  top: 0;
+}
+nav ul {
+  display: flex;
+  background-color: black;
+  /* padding-left: 10px; */
+}
+nav ul .merch {
+  display: none;
+}
+nav ul li {
+  list-style: none;
+  padding: 16px 20px;
+  cursor: pointer;
+}
+nav ul li a {
+  font-size: 15px;
+  text-decoration: none;
+  color: white;
+}
+nav ul li:hover {
+  background-color: #ccc;
+}
+nav ul li:hover a {
+  color: black;
+}
+.more {
+  position: relative;
+}
+.more:hover .sub {
+  display: block;
+}
+.search {
+  display: inline-block;
+  margin-left: auto;
+  width: 70px;
+  text-align: center;
+}
+nav ul .search:hover a {
+  color: #fff;
+}
+.search:hover {
+  background-color: #f44336;
+  cursor: pointer;
+}
+.sub {
+  position: absolute;
+  display: none;
+  background-color: #fff;
+  left: 0;
+  top: 50px;
+  padding: 0;
+}
+.sub li {
+  padding: 10px 30px;
+}
+.sub a {
+  color: black;
+  font-size: 15px;
+}
+.top-div {
+  position: relative;
+  z-index: -1;
+  margin-top: 46px;
+}
+.top-div img {
+  width: 100%;
+  display: block;
+  max-height: calc(100vh - 46px);
+}
+.top-div div {
+  position: absolute;
+  width: 100%;
+  bottom: 40px;
+  text-align: center;
+}
+.top-div div h2,
+.top-div div h4 {
+  color: #fff;
+  font-weight: normal;
+}
+.top-div div h2 {
+  font-size: 27px;
+}
+.top-div div h4 {
+  font-size: 17px;
+  padding-top: 16px;
+}
+.band {
+  padding-top: 60px;
+}
+.band h2 {
+  text-align: center;
+  font-size: 26px;
+  font-weight: normal;
+  letter-spacing: 7px;
+}
+.band h4 {
+  text-align: center;
+  font-weight: normal;
+  font-size: 15px;
+  padding: 20px 0;
+  font-style: italic;
+}
+.band p {
+  text-align: justify;
+  font-size: 15px;
+  line-height: 25px;
+}
+.center {
+  max-width: 800px;
+  margin: 0 auto;
+}
+.member {
+  display: flex;
+  justify-content: space-around;
+  padding-bottom: 90px;
+}
+.member .container {
+  width: 20%;
+}
+.member img {
+  width: 100%;
+  display: block;
+}
+.member p {
+  text-align: center;
+  font-size: 16px;
+  padding: 20px 0;
+}
+.dates_container {
+  width: 100%;
+  background-color: black;
+  /* padding-bottom: 32px; */
+}
+.dates {
+  padding-top: 80px;
+}
+.dates h2 {
+  font-size: 26px;
+  letter-spacing: 6px;
+  color: white;
+  text-align: center;
+  font-weight: normal;
+}
+.dates h4 {
+  font-size: 16px;
+  color: #666;
+  padding: 20px 0;
+  text-align: center;
+  font-weight: normal;
+  font-style: italic;
+}
+.dates .months div {
+  background-color: #fff;
+  border-bottom: 1px solid #ccc;
+}
+.dates .months div span {
+  padding: 10px;
+  font-size: 16px;
+  display: inline-block;
+}
+.dates .months div span.sold {
+  background-color: #f44336;
+  padding: 5px;
+  color: #fff;
+}
+.dates .months div span.num {
+  background-color: black;
+  color: #fff;
+  padding: 2px 5px;
+  width: 20px;
+  border-radius: 50%;
+  text-align: center;
+  float: right;
+  margin-top: 10px;
+  margin-right: 20px;
+}
+.cities {
+  margin-top: 30px;
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 120px;
+}
+.cities .city-photo {
+  background-color: #fff;
+  width: 32%;
+}
+.cities .city-photo img {
+  width: 100%;
+  display: block;
+}
+.cities .city-photo img:hover {
+  filter: brightness(0.7);
+}
+.cities .city-photo :nth-child(2) {
+  padding: 10px;
+  font-size: 15px;
+  font-weight: bold;
+}
+.cities .city-photo :nth-child(3) {
+  padding: 10px;
+  font-size: 15px;
+  color: #666;
+}
+.cities .city-photo :nth-child(4) {
+  padding: 10px;
+  font-size: 15px;
+}
+.cities .city-photo a {
+  font-size: 15px;
+  text-decoration: none;
+  background-color: black;
+  color: #fff;
+  padding: 12px;
+  display: inline-block;
+  margin: 15px;
+}
+.cities .city-photo a:hover {
+  background-color: #ccc;
+  color: black;
+}
+.contact {
+  padding-top: 80px;
+  padding-bottom: 90px;
+}
+.contact h2 {
+  text-align: center;
+  font-weight: normal;
+  font-size: 30px;
+  letter-spacing: 3px;
+}
+.contact h4 {
+  text-align: center;
+  font-weight: normal;
+  font-style: italic;
+  font-size: 17px;
+  padding: 30px;
+  color: #666;
+}
+.contact .container {
+  display: flex;
+  /* background-color: red; */
+}
+.contact .container .address {
+  flex: 1;
+  font-size: 17px;
+}
+.contact .container .address i {
+  padding: 5px;
+}
+.contact .container .form {
+  flex: 1;
+}
+.contact .container .form input {
+  font-size: 17px;
+  padding: 10px;
+}
+.contact .container .form input:nth-child(1) {
+  width: 48%;
+}
+.contact .container .form input:nth-child(2) {
+  width: 48%;
+  margin-left: 3.52%;
+}
+.contact .container .form input:nth-child(3) {
+  width: 100%;
+  margin-top: 1%;
+}
+.contact .container .form a {
+  font-size: 17px;
+  text-decoration: none;
+  display: block;
+  background-color: black;
+  color: #fff;
+  padding: 7px 14px;
+  margin-left: auto;
+  width: 70px;
+  margin-top: 10px;
+  text-align: center;
+}
+.contact .container .form a:hover {
+  background-color: #ccc;
+  color: black;
+}
+.map img {
+  width: 100%;
+  display: block;
+}
+footer {
+  text-align: center;
+  padding-top: 80px;
+  padding-bottom: 60px;
+}
+footer .fa {
+  font-size: 20px;
+  padding: 3px;
+  color: #666;
+}
+footer p {
+  color: #666;
+  padding: 20px;
+  font-size: 15px;
+}
+nav label {
+  font-size: 16px;
+  display: none;
+  position: fixed;
+  padding: 15.5px 12px;
+  right: 0;
+  top: 0;
+  color: #fff;
+  width: 55px;
+  text-align: center;
+  cursor: pointer;
+}
+#click {
+  display: none;
+}
+@media only screen and (max-width: 600px) {
+  nav ul .more,
+  nav ul .search {
+    display: none;
+  }
+  nav ul .merch {
+    display: block;
+  }
+  nav ul {
+    display: block;
+  }
+  nav ul .home {
+    display: inline-block;
+  }
+  nav ul .down {
+    display: none;
+  }
+  #click:checked ~ nav ul .down {
+    display: block;
+  }
+  nav label {
+    display: block;
+  }
+  nav label:hover {
+    background-color: #ccc;
+    color: black;
+  }
+  .band p {
+    padding-left: 14px;
+    padding-right: 14px;
+  }
+  .member {
+    display: block;
+  }
+  .member .container {
+    width: 55%;
+    margin: 0 auto;
+  }
+  .dates_container .months {
+    margin-left: 15px;
+    margin-right: 15px;
+  }
+  .cities {
+      display: block;
+  }
+  .cities .city-photo {
+      width: 94%;
+      margin: 20px auto;
+  }
+  .contact .container {
+      margin-left: 10px;
+      margin-right: 10px;
+      display: block;
+  }
+  .contact .container .form [type="text"]:nth-child(n) {
+      margin-left: 10px;
+      width: 95%;
+  }
+  .contact .container .form a {
+      margin-right: 17px;
+  }
+}
